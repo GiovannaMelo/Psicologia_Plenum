@@ -1,0 +1,679 @@
+/*Home */
+::-webkit-scrollbar-track {
+    background-color: #C7E0D1;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background: #825c92;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #825c92;
+}
+* {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 200vh;
+    background-image: url(../img/fundo.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.menu-nav {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #9067A9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 20px;
+    z-index: 5;
+    transition: 0.4s;
+}
+
+.general-title {
+    color: #500980;
+    width: fit-content;
+    margin: 20px auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.general-title h1 {
+    font-size: 30px;
+}
+
+.general-title .pink-stroke {
+    margin: auto;
+    background-color: #4b1e68;
+    width: 100%;
+    height: 3px;
+    text-align: center;
+    margin-top: 10px;
+    border: none;
+}
+
+.black-layer {
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    box-shadow: 0px 6px 25px -2px rgba(0, 0, 0, 0.75);
+}
+
+.menu-nav .nav-menu {
+    width: fit-content;
+    height: 20%;
+}
+
+.menu-nav .nav-menu ul {
+    list-style: none;
+}
+
+.menu-nav .nav-menu ul li {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 20px;
+}
+
+.menu-nav .nav-menu ul li a {
+    text-decoration: none;
+    color: #FFF;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: inline-block;
+    transition: 0.15s all ease-in-out;
+}
+
+.menu-nav .nav-menu ul li a:hover {
+    text-decoration: none;
+    color: #FFF;
+    border-bottom: 3px solid #C7E0D1;
+    padding-bottom: 8px;
+}
+
+.bg-container {
+    background: url(../img/banner1.png) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    /* a unidade de medida vh significa viewer height, ele pega altura do monitor */
+    top: 0;
+    display: flex;
+    /* display flex ajuda a posicionar os elementos no centro de forma responsiva */
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    z-index: -5;
+    background-attachment: fixed;
+    /* dá a impressão da imagem estar se mexendo */
+    /* z-index negativo permite sobrepor elementos no canal alpha */
+}
+
+.img-home-text {
+    width: fit-content;
+    color: white;
+    text-align: center;
+}
+
+.slogan {
+    display: flex;
+    flex-direction: column;
+    /* deixa os elementos um em baixo do outro */
+    justify-content: center;
+    align-items: center;
+}
+
+.div-buttons {
+    margin-top: 120%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* Eu deifini o flex-direction para ficar em linha por padrão, 
+    mas a propriedade flex-wrap faz com que ele se ajuste para coluna 
+    em resoluções menores */
+    justify-content: center;
+}
+
+.btn-left {
+    background-color: #825c92;
+    text-align: center;
+}
+
+.btn-right {
+    background-color: #825c92;
+    text-align: center;
+}
+
+.btn-left,
+.btn-right {
+    padding: 13px;
+    margin: 10px;
+    font-size: medium;
+    width: 200px;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+.btn-right:hover {
+    cursor: pointer;
+    background-color: #4b1e68;
+}
+
+.btn-left:hover {
+    cursor: pointer;
+    background-color: #4b1e68;
+}
+
+.boxes {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.boxes-item {
+    margin: 15px 5px;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: rgba(189, 189, 189, 0.75);
+    border-radius: 10px;
+    border-radius: 2px;
+}
+
+.content {
+    width: 100%;
+    height: auto;
+    min-height: 50vh;
+    position: relative;
+    overflow: unset;
+}
+
+.absolute-orientation {
+    position: absolute;
+    top: -30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-container {
+    margin-bottom: 50px;
+}
+
+.box-icon {
+    background-color: #0095c7;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.box-text {
+    width: 90%;
+    text-align: center;
+}
+
+@media(max-width: 500px) {
+    .navbar {
+        display: none;
+    }
+}
+
+@media(max-width: 840px) {
+    .section-contato .Caixa {
+        width: 90% !important;
+    }
+}
+
+
+/*Sobre nós*/
+
+.section-sobreNos {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.section-sobreNos .container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    padding-top: 80px;
+}
+
+.section-sobreNos .container .text {
+    width: 90%;
+    margin: auto;
+    padding-top: 40px;
+}
+
+.section-sobreNos .container p {
+    text-align: center;
+    font-size: 23px;
+    font-weight: 400;
+}
+.section-sobreNos .icon-mapa{
+    color: #9067A9;
+    margin-bottom: 2%;
+    font-size: 40px;
+}
+.section-sobreNos .box .container {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 23px;
+}
+
+.section-sobreNos .box-item {
+    width: 210px;
+    margin: 25px;
+}
+
+.section-sobreNos .box-item img {
+    width: 35%;
+}
+
+.section-sobreNos .box-item h3 {
+    margin: 13px;
+}
+.section-sobreNos .box-item p{
+   
+    font-size: 16px;
+}
+
+
+/*PROFISSIONAL */
+
+.section-equipe {
+    margin-top: 5%;
+    width: 100%;
+    height: auto;
+    padding-top: 30px;
+    margin-bottom: 50px;
+}
+
+.section-equipe .container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 95%;
+}
+
+.section-equipe .team-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-equipe .group {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.section-equipe .nome{
+    width: 220px;
+    height: 50px;
+    margin: 30px 35px;
+    flex-direction: row;
+    position: relative;
+    transition: all ease-in-out 0.5s;
+    border: 2px solid rgba(143, 89, 231, 0.801);
+    cursor: pointer;
+}
+.section-equipe .informacoes{
+    width: 240px;
+    height: 300px;
+    margin: 30px 35px;
+    flex-direction: row;
+    position: relative;
+    transition: all ease-in-out 0.5s;
+    border: 2px solid rgba(143, 89, 231, 0.801);
+    cursor: pointer;
+    color: #FFF;
+}
+.section-equipe .informacoes .holder{
+    padding-top: 10px;
+    text-align: justify;
+}
+
+.member {
+    width: 240px;
+    height: 300px;
+    margin: 30px 35px;
+    position: relative;
+    transition: all ease-in-out 0.5s;
+    border: 2px solid rgba(143, 89, 231, 0.801);
+    cursor: pointer;
+    color: #FFF;
+}
+
+.section-equipe .member-info {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid rgb(154, 13, 197);
+    background-color: #825c92;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    transition: all 0.2s;
+}
+
+.holder {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.section-equipe .pink-overlay {
+    position: absolute !important;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scaleY(0);
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.7s;
+    background-color: rgba(190, 24, 255, 0.25);
+}
+
+.member-info img {
+    width: 100%;
+    transition: transform 0.7s;
+    z-index: -1;
+}
+.member-info h3, h5, p{
+    text-align: center;
+}
+
+
+
+
+
+/*SERVIÇOS*/
+
+.section-servicos {
+    width: 100%;
+    height: auto;
+}
+
+.section-servicos .container-section-servicos {
+    width: 80%;
+    height: 98%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.section-servicos .div-logo-section-servicos {
+    width: 100%;
+    padding: auto;
+}
+
+.section-servicos .div-logo-section-servicos {
+    margin-top: 1%;
+    width: 39%;
+    float: left;
+    margin-left: 30%;
+}
+
+.section-servicos .subtitulo-servicos {
+    text-align: center;
+    margin-top: 11%;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.section-servicos .boxes {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    color: #FFF;
+}
+.section-servicos a {
+    text-decoration: none;
+    color: #FFF;
+}
+.section-servicos a  :hover{
+    text-decoration: none;
+    color: #FFF;
+}
+.section-servicos .boxes h3 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.section-servicos .boxes-item {
+    margin: 20px 20px;
+    width: 40vh;
+    height: 260px;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: #825c92;
+    border-radius: 10px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.section-servicos .box-container {
+    margin-bottom: 50px;
+}
+
+.section-servicos .box-icon {
+    background-color: #c88dda;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.section-servicos .box-text {
+    width: 90%;
+    text-align: center;
+}
+
+.section-servicos .box-icon img {
+    width: 75%
+}
+
+.section-servicos .container-section-servicos {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 17px;
+}
+
+.section-servicos .colum-servicos {
+    width: 45%;
+    margin: 10px;
+}
+
+/*SECTION DUVIDAS*/
+
+.section-duvidas {
+    width: 100%;
+    height: auto;
+}
+.container-duvidas{
+    background-color:#825c92;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.section-duvidas .accordion-flush{
+    width: 80%;
+    margin: auto;
+    background-color: #a1ddc6;
+    text-decoration: none;
+}
+
+
+.section-duvidas .accordion-item, .accordion-button, .accordion-header, button{
+    border-radius: 29px;
+    text-decoration: none;
+    background-color: #825c92;
+    color: white;
+    text-align: justify;
+}
+
+/*CONTATO*/
+
+.section-contato .Caixa {
+    margin: auto;
+    background-color: #825c92;
+    border-radius: 29px;
+    width: 80%;
+    height: auto;
+    position: relative;
+    margin-top: 5%;
+    padding-top: 2%;
+}
+
+.section-contato .boxes {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    color: #FFF;
+}
+
+.section-contato .boxes h3 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.section-contato .boxes-item {
+    width: 35vh;
+    margin: auto;
+    height: 400px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: #825c92;
+    border-radius: 10px;
+    border-radius: 2px;
+}
+
+
+
+.Caixa  img{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.Caixa .mapa h1{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Caixa .info h1{
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.footer {
+    background-color: #C7E0D1;
+    text-align: center;
+    margin-top: 4%;
+    height: 120px;
+    border-top: 3px solid #9067A9;
+}
+
+.footer h4 {
+    margin: 0;
+    font-weight: 200;
+    padding-top: 40px;
+    color: white;
+}
+
+.footer h4 a {
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+}
+
+.footer .icones {
+    
+    display: flex;
+justify-content: center
+   
+}
+
+.footer .icones .fab {
+    font-size: 30px;
+    color: #825c92;
+    padding: 10px 10px 0 10px;
+    float: left;
+    height: 30px;
+    text-align: center;
+}
+
+ .footer a :hover{
+    color: #4b1e68;
+    box-shadow: 2px  #825c92;
+}
