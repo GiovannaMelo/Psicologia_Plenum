@@ -12,6 +12,7 @@
 ::-webkit-scrollbar-thumb {
     background: #825c92;
 }
+
 * {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -145,8 +146,8 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* Eu deifini o flex-direction para ficar em linha por padrão, 
-    mas a propriedade flex-wrap faz com que ele se ajuste para coluna 
+    /* Eu deifini o flex-direction para ficar em linha por padrão,
+    mas a propriedade flex-wrap faz com que ele se ajuste para coluna
     em resoluções menores */
     justify-content: center;
 }
@@ -283,11 +284,13 @@ body {
     font-size: 23px;
     font-weight: 400;
 }
-.section-sobreNos .icon-mapa{
+
+.section-sobreNos .icon-mapa {
     color: #9067A9;
     margin-bottom: 2%;
     font-size: 40px;
 }
+
 .section-sobreNos .box .container {
     text-align: center;
     display: flex;
@@ -308,8 +311,9 @@ body {
 .section-sobreNos .box-item h3 {
     margin: 13px;
 }
-.section-sobreNos .box-item p{
-   
+
+.section-sobreNos .box-item p {
+
     font-size: 16px;
 }
 
@@ -346,7 +350,7 @@ body {
     justify-content: center;
 }
 
-.section-equipe .nome{
+.section-equipe .nome {
     width: 220px;
     height: 50px;
     margin: 30px 35px;
@@ -356,7 +360,8 @@ body {
     border: 2px solid rgba(143, 89, 231, 0.801);
     cursor: pointer;
 }
-.section-equipe .informacoes{
+
+.section-equipe .informacoes {
     width: 240px;
     height: 300px;
     margin: 30px 35px;
@@ -367,7 +372,8 @@ body {
     cursor: pointer;
     color: #FFF;
 }
-.section-equipe .informacoes .holder{
+
+.section-equipe .informacoes .holder {
     padding-top: 10px;
     text-align: justify;
 }
@@ -418,11 +424,15 @@ body {
 }
 
 .member-info img {
+    height: 100%;
     width: 100%;
     transition: transform 0.7s;
     z-index: -1;
 }
-.member-info h3, h5, p{
+
+.member-info h3,
+h5,
+p {
     text-align: center;
 }
 
@@ -473,14 +483,17 @@ body {
     justify-content: center;
     color: #FFF;
 }
+
 .section-servicos a {
     text-decoration: none;
     color: #FFF;
 }
-.section-servicos a  :hover{
+
+.section-servicos a :hover {
     text-decoration: none;
     color: #FFF;
 }
+
 .section-servicos .boxes h3 {
     margin: 0;
     font-size: 22px;
@@ -546,8 +559,9 @@ body {
     width: 100%;
     height: auto;
 }
-.container-duvidas{
-    background-color:#825c92;
+
+.container-duvidas {
+    background-color: #825c92;
     width: 80%;
     height: auto;
     margin: auto;
@@ -557,7 +571,7 @@ body {
     text-decoration: none;
 }
 
-.section-duvidas .accordion-flush{
+.section-duvidas .accordion-flush {
     width: 80%;
     margin: auto;
     background-color: #a1ddc6;
@@ -565,7 +579,10 @@ body {
 }
 
 
-.section-duvidas .accordion-item, .accordion-button, .accordion-header, button{
+.section-duvidas .accordion-item,
+.accordion-button,
+.accordion-header,
+button {
     border-radius: 29px;
     text-decoration: none;
     background-color: #825c92;
@@ -618,19 +635,19 @@ body {
 
 
 
-.Caixa  img{
+.Caixa img {
     width: 300px;
     height: 300px;
     border-radius: 20px;
 }
 
-.Caixa .mapa h1{
+.Caixa .mapa h1 {
     font-size: 18px;
     text-align: center;
     margin-bottom: 20px;
 }
 
-.Caixa .info h1{
+.Caixa .info h1 {
     margin-bottom: 20px;
     font-size: 18px;
     text-align: center;
@@ -658,10 +675,9 @@ body {
 }
 
 .footer .icones {
-    
+
     display: flex;
-justify-content: center
-   
+    justify-content: center
 }
 
 .footer .icones .fab {
@@ -673,7 +689,7 @@ justify-content: center
     text-align: center;
 }
 
- .footer a :hover{
+.footer a :hover {
     color: #4b1e68;
-    box-shadow: 2px  #825c92;
+    box-shadow: 2px #825c92;
 }
