@@ -23,6 +23,7 @@ html {
 }
 
 body {
+    width: 100%;
     height: 200vh;
     background-image: url(../img/fundo.jpeg);
     background-attachment: fixed;
@@ -112,19 +113,15 @@ body {
 .bg-container {
     background: url(../img/banner1.png) no-repeat center;
     background-size: cover;
-    width: 100%;
+    width: 110%;
     height: 100vh;
-    /* a unidade de medida vh significa viewer height, ele pega altura do monitor */
     top: 0;
     display: flex;
-    /* display flex ajuda a posicionar os elementos no centro de forma responsiva */
     justify-content: center;
     align-items: center;
     left: 0;
     z-index: -5;
     background-attachment: fixed;
-    /* dá a impressão da imagem estar se mexendo */
-    /* z-index negativo permite sobrepor elementos no canal alpha */
 }
 
 .img-home-text {
@@ -260,7 +257,7 @@ body {
 /*Sobre nós*/
 
 .section-sobreNos {
-    width: 100%;
+    width: 110%;
     height: auto;
     background-size: cover;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
@@ -322,7 +319,7 @@ body {
 
 .section-equipe {
     margin-top: 5%;
-    width: 100%;
+    width: 110%;
     height: auto;
     padding-top: 30px;
     margin-bottom: 50px;
@@ -362,8 +359,8 @@ body {
 }
 
 .section-equipe .informacoes {
-    width: 240px;
-    height: 300px;
+    width: 280px;
+    height: 420px;
     margin: 30px 35px;
     flex-direction: row;
     position: relative;
@@ -380,7 +377,7 @@ body {
 
 .member {
     width: 240px;
-    height: 300px;
+    height: 450px;
     margin: 30px 35px;
     position: relative;
     transition: all ease-in-out 0.5s;
@@ -401,7 +398,7 @@ body {
     transition: all 0.2s;
 }
 
-.holder {
+.section-equipe .holder {
     position: relative;
     width: 100%;
     height: 100%;
@@ -437,13 +434,10 @@ p {
 }
 
 
-
-
-
 /*SERVIÇOS*/
 
 .section-servicos {
-    width: 100%;
+    width: 110%;
     height: auto;
 }
 
@@ -556,7 +550,7 @@ p {
 /*SECTION DUVIDAS*/
 
 .section-duvidas {
-    width: 100%;
+    width: 110%;
     height: auto;
 }
 
@@ -591,6 +585,9 @@ button {
 }
 
 /*CONTATO*/
+.section-contato {
+    width: 110%;
+}
 
 .section-contato .Caixa {
     margin: auto;
@@ -692,4 +689,154 @@ button {
 .footer a :hover {
     color: #4b1e68;
     box-shadow: 2px #825c92;
+}
+
+/*SECTION RECURSO*/
+
+.section-recurso {
+    margin-top: 5%;
+    width: 100%;
+    height: auto;
+    padding-top: 30px;
+    margin-bottom: 80px;
+}
+
+.section-recurso .container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 95%;
+}
+
+.section-recurso .team-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-recurso .group {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.section-recurso .nome {
+    width: 220px;
+    height: 50px;
+    margin: 30px 35px;
+    flex-direction: row;
+    position: relative;
+    transition: all ease-in-out 0.5s;
+    border: 2px solid rgba(143, 89, 231, 0.801);
+    cursor: pointer;
+}
+
+.section-recurso .informacoes {
+    width: 400px;
+    height: 400px;
+    padding: 16px;
+    margin: 30px 35px;
+    flex-direction: row;
+    position: relative;
+    transition: all ease-in-out 0.5s;
+    border: 2px solid rgba(143, 89, 231, 0.801);
+    cursor: pointer;
+    color: #FFF;
+}
+
+.section-recurso .informacoes .holder {
+    padding-top: 10px;
+    text-align: justify;
+}
+
+.member {
+    width: 400px;
+    height: 400px;
+    margin: 30px 35px;
+    position: relative;
+    transition: all ease-in-out 0.5s;
+    border: 2px solid rgba(143, 89, 231, 0.801);
+    cursor: pointer;
+    color: #FFF;
+}
+
+.section-recurso .member-info {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid rgb(154, 13, 197);
+    background-color: #825c92;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    transition: all 0.2s;
+}
+
+.section-recurso .holder {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.section-recurso a {
+    text-decoration: none;
+}
+
+.button {
+    padding-top: 8px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #825c92;
+    text-align: center;
+    background-color: #a1ddc6;
+    width: 200px;
+    border: none;
+    height: 50px;
+}
+
+.section-recurso .pink-overlay {
+    position: absolute !important;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scaleY(0);
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.7s;
+    background-color: rgba(190, 24, 255, 0.25);
+}
+
+.member-info img {
+    height: 100%;
+    width: 100%;
+    transition: transform 0.7s;
+    z-index: -1;
+}
+
+.member-info h3,
+h4,
+h5,
+p {
+    text-align: center;
+}
+
+.member-info h3 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.member-info p {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 16px;
+    margin-right: 16px;
+    text-align: center;
 }

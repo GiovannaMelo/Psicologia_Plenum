@@ -14,11 +14,19 @@
     text-align: center;
     align-items: center;
 }
-.main img{
+
+.main .container h4 {
+    text-align: left;
+    font-weight: bold;
+    color: #825c92;
+}
+
+.main img {
     width: 300px;
     text-align: center;
     justify-content: center;
 }
+
 .main .container .text {
     width: 80%;
     margin: auto;
@@ -39,7 +47,7 @@
     font-size: 23px;
 }
 
-.icon-back{
+.icon-back {
     font-size: 3em;
     margin-top: 5%;
     margin-left: 5%;
